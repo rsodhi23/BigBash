@@ -1,0 +1,12 @@
+C:\Users\rajat\Desktop\BigBash\bin\Debug\netcoreapp2.0\BigBash.deps.json
+C:\Users\rajat\Desktop\BigBash\bin\Debug\netcoreapp2.0\BigBash.runtimeconfig.json
+C:\Users\rajat\Desktop\BigBash\bin\Debug\netcoreapp2.0\BigBash.runtimeconfig.dev.json
+C:\Users\rajat\Desktop\BigBash\bin\Debug\netcoreapp2.0\BigBash.dll
+C:\Users\rajat\Desktop\BigBash\bin\Debug\netcoreapp2.0\BigBash.pdb
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.csproj.CoreCompileInputs.cache
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.AssemblyInfoInputs.cache
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.AssemblyInfo.cs
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.dll
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.pdb
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.csproj.AssemblyReference.cache
+C:\Users\rajat\Desktop\BigBash\obj\Debug\netcoreapp2.0\BigBash.GeneratedMSBuildEditorConfig.editorconfig

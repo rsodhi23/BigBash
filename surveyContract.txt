@@ -1,0 +1,75 @@
+{
+
+  "endpoint": "/api/workout-plans",
+
+  "method": "POST",
+
+  "content-type": "application/json",
+
+  "request": {
+
+    "body": {
+
+      "experienceLevel": "string", // Beginner, Intermediate, Advanced
+
+      "trainingType": "string", // General, CrossFit, PowerLifting
+
+      "trainingDaysPerWeek": {
+
+        "min": "integer",
+
+        "max": "integer"
+
+      },
+
+      "planDurationWeeks": "integer", // 4, 6, or 8
+
+      "additionalDetails": "string" // Optional free-text input
+
+    }
+
+  },
+
+  "response": {
+
+    "200": {
+
+      "description": "Workout plan successfully created",
+
+      "body": {
+
+        "workoutPlanId": "string",
+
+        "message": "string" // Confirmation or additional notes
+
+      }
+
+    },
+
+    "400": {
+
+      "description": "Invalid input data",
+
+      "body": {
+
+        "error": "string" // Error details
+
+      }
+
+    },
+
+    "500": {
+
+      "description": "Internal server error",
+
+      "body": {
+
+        "error": "string" // Error message for debugging
+
+      }
+
+    }
+
+  }
+
+}
