@@ -1,0 +1,67 @@
+{
+
+  "workoutPlanId": "string",
+
+  "planDurationWeeks": "integer",
+
+  "trainingDaysPerWeek": "integer",
+
+  "completed": "boolean",
+
+  "workoutPlan": [
+
+    {
+
+      "week": "integer",
+
+      "days": [
+
+        {
+
+          "day": "integer",
+
+          "workouts": [
+
+            {
+
+              "workoutId": "string",
+
+              "workoutName": "string",
+
+              "description": "string",
+
+              "sets": [
+
+                {
+
+                  "setId": "string",
+
+                  "setNumber": "integer",
+
+                  "reps": "integer",
+
+                  "weight": "number",
+
+                  "completed": "boolean"
+
+                }
+
+              ],
+
+              "restTimeSeconds": "integer",
+
+              "completed": "boolean"
+
+            }
+
+          ]
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}

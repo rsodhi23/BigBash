@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigBash")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2aba4fe5a0075a240695f460480f68a14fc0c6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52e7c4f58ba5e8482a4692081a80240ae4e7b347")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigBash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigBash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
