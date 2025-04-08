@@ -1,6 +1,7 @@
 using BigBash.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace BigBash.Controllers
 {
@@ -8,6 +9,14 @@ namespace BigBash.Controllers
     [Route("api/workout-plans")]
     public class SurveyController : ControllerBase
     {
+        // Inject MemoryCache service
+        private readonly IMemoryCache _memoryCache;
+
+        public SurveyController(IMemoryCache memoryCache)
+        {
+            _memoryCache = memoryCache;
+        }
+
         [HttpPost]
         public async Task<IActionResult> SubmitWorkoutPlanAsync([FromBody] WorkoutPlanRequest request)
         {
@@ -15,10 +24,6 @@ namespace BigBash.Controllers
             {
                 return BadRequest(new { error = "Invalid input data" });
             }
-
-            //
-            // Replace with your Gemini AI API key
-            string apiKey = "AIzaSyCT99CjWFeLPNO6E257_JfThPWGhOc5K-s";
 
             using (var httpClient = new HttpClient())
             {
@@ -48,24 +53,37 @@ namespace BigBash.Controllers
 
                 var result = await response.Content.ReadAsStringAsync();
                 var geminiResult = JsonConvert.DeserializeObject<GeminiResponseModel>(result);
-                var res = geminiResult.Candidates.FirstOrDefault()?.Content.Parts.FirstOrDefault()?.Text;
+                var res = geminiResult?.Candidates?.FirstOrDefault()?.Content?.Parts?.FirstOrDefault()?.Text;
 
-                // Remove JSON string from the response
+                if (string.IsNullOrEmpty(res))
+                {
+                    return StatusCode(500, new { error = "Invalid response from Gemini AI" });
+                }
+
                 res = res.Replace("```json", string.Empty).Replace("```", string.Empty);
-                
+
                 var responseModel = JsonConvert.DeserializeObject<ResponseModel>(res);
-                return Ok(responseModel);
+
+                if (responseModel == null || string.IsNullOrEmpty(responseModel.WorkoutPlanId))
+                {
+                    return StatusCode(500, new { error = "Failed to parse workout plan" });
+                }
+
+                // Save the workout plan in MemoryCache
+                _memoryCache.Set(responseModel.WorkoutPlanId, responseModel);
+
+                return Ok(responseModel.WorkoutPlanId);
             }
         }
     }
 
     public class WorkoutPlanRequest
     {
-        public string ExperienceLevel { get; set; } // Beginner, Intermediate, Advanced
-        public string TrainingType { get; set; } // General, CrossFit, PowerLifting
-        public TrainingDaysPerWeek TrainingDaysPerWeek { get; set; }
+        public string ExperienceLevel { get; set; } = string.Empty; // Beginner, Intermediate, Advanced
+        public string TrainingType { get; set; } = string.Empty; // General, CrossFit, PowerLifting
+        public TrainingDaysPerWeek TrainingDaysPerWeek { get; set; } = new TrainingDaysPerWeek();
         public int PlanDurationWeeks { get; set; } // 4, 6, or 8
-        public string AdditionalDetails { get; set; } // Optional free-text input
+        public string AdditionalDetails { get; set; } = string.Empty; // Optional free-text input
     }
 
     public class TrainingDaysPerWeek
@@ -73,5 +91,4 @@ namespace BigBash.Controllers
         public int Min { get; set; }
         public int Max { get; set; }
     }
-
 }

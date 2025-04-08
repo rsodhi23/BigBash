@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using System.Net.Http;
 using System.Threading.Tasks;
+using BigBash.Models;
 
 namespace BigBash.Controllers
 {
@@ -8,6 +10,13 @@ namespace BigBash.Controllers
     [Route("api/values")]
     public class GetValuesController : ControllerBase
     {
+        private readonly IMemoryCache _memoryCache;
+
+        public GetValuesController(IMemoryCache memoryCache)
+        {
+            _memoryCache = memoryCache;
+        }
+
         [HttpGet]
         public IActionResult Get()
         {
@@ -23,50 +32,11 @@ namespace BigBash.Controllers
                 return BadRequest(new { error = "Workout Plan ID is required" });
             }
 
-            // Simulate fetching a workout plan based on the provided ID
-            var workoutPlan = new
+            // Retrieve the workout plan from MemoryCache
+            if (!_memoryCache.TryGetValue(workoutPlanId, out ResponseModel workoutPlan))
             {
-                workoutPlanId = workoutPlanId,
-                planDurationWeeks = 8,
-                trainingDaysPerWeek = 5,
-                completed = false,
-                workoutPlan = new[]
-                {
-                    new
-                    {
-                        week = 1,
-                        days = new[]
-                        {
-                            new
-                            {
-                                day = 1,
-                                workouts = new[]
-                                {
-                                    new
-                                    {
-                                        workoutId = "w1",
-                                        workoutName = "Squats",
-                                        description = "Leg workout",
-                                        sets = new[]
-                                        {
-                                            new
-                                            {
-                                                setId = "s1",
-                                                setNumber = 1,
-                                                reps = 10,
-                                                weight = 50.0,
-                                                completed = false
-                                            }
-                                        },
-                                        restTimeSeconds = 60,
-                                        completed = false
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            };
+                return NotFound(new { error = "Workout Plan not found" });
+            }
 
             return Ok(workoutPlan);
         }
