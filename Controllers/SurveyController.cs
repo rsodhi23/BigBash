@@ -49,45 +49,11 @@ namespace BigBash.Controllers
                 var result = await response.Content.ReadAsStringAsync();
                 var geminiResult = JsonConvert.DeserializeObject<GeminiResponseModel>(result);
                 var res = geminiResult.Candidates.FirstOrDefault()?.Content.Parts.FirstOrDefault()?.Text;
-                Console.WriteLine(res); // Log the response for debugging
+
+                // Remove JSON string from the response
+                res = res.Replace("```json", string.Empty).Replace("```", string.Empty);
                 
-                var responseModel = new
-                {
-                    WorkoutPlanId = Guid.NewGuid().ToString(),
-                    PlanDurationWeeks = request.PlanDurationWeeks,
-                    TrainingDaysPerWeek = new Random().Next(request.TrainingDaysPerWeek.Min, request.TrainingDaysPerWeek.Max + 1),
-                    Completed = false,
-                    WorkoutPlan = Enumerable.Range(1, request.PlanDurationWeeks).Select(week => new
-                    {
-                        Week = week,
-                        Days = Enumerable.Range(1, 7).Select(day => new
-                        {
-                            Day = day,
-                            Workouts = new[]
-                            {
-                                new
-                                {
-                                    WorkoutId = Guid.NewGuid().ToString(),
-                                    WorkoutName = $"Workout {day}",
-                                    Description = "Sample workout description",
-                                    Sets = new[]
-                                    {
-                                        new
-                                        {
-                                            SetId = Guid.NewGuid().ToString(),
-                                            SetNumber = 1,
-                                            Reps = 10,
-                                            Weight = 50.0,
-                                            Completed = false
-                                        }
-                                    },
-                                    RestTimeSeconds = 60,
-                                    Completed = false
-                                }
-                            }
-                        })
-                    })
-                };
+                var responseModel = JsonConvert.DeserializeObject<ResponseModel>(res);
                 return Ok(responseModel);
             }
         }
