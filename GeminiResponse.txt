@@ -1,0 +1,201 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"WorkoutPlanId\": \"BeginnerFullBody6Week\",\n  \"PlanDurationWeeks\": 6,\n 
+ \"TrainingDaysPerWeek\": 3,\n  \"Completed\": false,\n  \"WorkoutPlan\": [\n    {\n      \"Week\": 1,\n      \"Days\": [\n        {\n          \"Day\": 1,\n          \"Workouts\": [\n            {\n              \"WorkoutId\": \"W1D1Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest 
+up.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D1SquatS1\",\n
+       \"SetNumber\": 1,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n
+ \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1SquatS2\",\n   
+               \"SetNumber\": 2,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n
+         \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1SquatS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n 
+                 \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W1D1PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D1PushUpS1\",\n
+         \"SetNumber\": 1,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n
+  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1PushUpS2\",\n 
+                 \"SetNumber\": 2,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n        
+          \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 
+60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W1D1Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your 
+body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D1RowS1\",\n
+       \"SetNumber\": 1,\n                  \"Reps\": 10,\n                  \"Weight\": 5.0,\n
+ \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1RowS2\",\n     
+             \"SetNumber\": 2,\n                  \"Reps\": 10,\n                  \"Weight\": 5.0,\n
+       \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W1D1RowS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 5.0,\n     
+             \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n             {\n              \"WorkoutId\": \"W1D1Plank\",\n              \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D1PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n        },\n        {\n          \"Day\": 2,\n          \"Workouts\": [\n              {\n              \"WorkoutId\": \"W1D2Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n 
+               {\n                  \"SetId\": \"W1D2SquatS1\",\n                  \"SetNumber\": 1,\n
+        \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+   },\n                {\n                  \"SetId\": \"W1D2SquatS2\",\n                  \"SetNumber\": 2,\n  
+                \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n     
+           },\n                {\n                  \"SetId\": \"W1D2SquatS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W1D2PushUp\",\n              \"WorkoutName\": 
+\"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D2PushUpS1\",\n                  \"SetNumber\": 1,\n        
+          \"Reps\": 8,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+    },\n                {\n                  \"SetId\": \"W1D2PushUpS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n    
+            },\n                {\n                  \"SetId\": \"W1D2PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W1D2Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D2RowS1\",\n                  \"SetNumber\": 1,\n
+        \"Reps\": 10,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n
+   },\n                {\n                  \"SetId\": \"W1D2RowS2\",\n                  \"SetNumber\": 2,\n    
+              \"Reps\": 10,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n       
+         },\n                {\n                  \"SetId\": \"W1D2RowS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n 
+               }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n             {\n              \"WorkoutId\": \"W1D2Plank\",\n              \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n      
+        \"Sets\": [\n                {\n                  \"SetId\": \"W1D2PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n        },\n        {\n          \"Day\": 3,\n          \"Workouts\": [\n  
+          {\n              \"WorkoutId\": \"W1D3Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D3SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 10,\n
+   \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n
+      \"SetId\": \"W1D3SquatS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 10,\n       
+           \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n    
+              \"SetId\": \"W1D3SquatS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n   
+           \"WorkoutId\": \"W1D3PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D3PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 8,\n
+    \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n
+       \"SetId\": \"W1D3PushUpS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 8,\n      
+            \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n   
+               \"SetId\": \"W1D3PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 8,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n  
+            \"WorkoutId\": \"W1D3Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n
+\"SetId\": \"W1D3RowS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 10,\n
+   \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n
+      \"SetId\": \"W1D3RowS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 10,\n
+         \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n      
+            \"SetId\": \"W1D3RowS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n   
+               \"Weight\": 5.0,\n                  \"Completed\": false\n                }\n              ],\n  
+            \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n             {\n      
+        \"WorkoutId\": \"W1D3Plank\",\n              \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W1D3PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n
+   ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n 
+       }\n      ]\n    },\n    {\n      \"Week\": 2,\n      \"Days\": [\n        {\n          \"Day\": 1,\n     
+     \"Workouts\": [\n            {\n              \"WorkoutId\": \"W2D1Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n
+ {\n                  \"SetId\": \"W2D1SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n       
+         {\n                  \"SetId\": \"W2D1SquatS2\",\n                  \"SetNumber\": 2,\n
+  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D1SquatS3\",\n                  \"SetNumber\": 3,\n        
+          \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+     }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n
+  },\n            {\n              \"WorkoutId\": \"W2D1PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n
+  {\n                  \"SetId\": \"W2D1PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n     
+           {\n                  \"SetId\": \"W2D1PushUpS2\",\n                  \"SetNumber\": 2,\n
+     \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+},\n                {\n                  \"SetId\": \"W2D1PushUpS3\",\n                  \"SetNumber\": 3,\n    
+              \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n       
+         }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n      
+      },\n            {\n              \"WorkoutId\": \"W2D1Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n
+      {\n                  \"SetId\": \"W2D1RowS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n    
+            {\n                  \"SetId\": \"W2D1RowS2\",\n                  \"SetNumber\": 2,\n
+   \"Reps\": 12,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D1RowS3\",\n                  \"SetNumber\": 3,\n
+         \"Reps\": 12,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n
+    }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n
+ },\n             {\n              \"WorkoutId\": \"W2D1Plank\",\n              \"WorkoutName\": \"Plank\",\n   
+           \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D1PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n   
+             }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n  
+          }\n          ]\n        },\n        {\n          \"Day\": 2,\n          \"Workouts\": [\n
+ {\n              \"WorkoutId\": \"W2D2Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n
+     \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping 
+your back straight and chest up.\",\n              \"Sets\": [\n                {\n                  \"SetId\": 
+\"W2D2SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D2SquatS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 12,\n
+  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n
+     \"SetId\": \"W2D2SquatS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 12,\n        
+          \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n       
+       \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n
+  \"WorkoutId\": \"W2D2PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D2PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D2PushUpS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 10,\n
+     \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n
+        \"SetId\": \"W2D2PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n    
+              \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n   
+           \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n        
+      \"WorkoutId\": \"W2D2Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D2RowS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n
+\"SetId\": \"W2D2RowS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 12,\n
+   \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n
+      \"SetId\": \"W2D2RowS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 12,\n
+         \"Weight\": 5.0,\n                  \"Completed\": false\n                }\n              ],\n        
+      \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n             {\n
+  \"WorkoutId\": \"W2D2Plank\",\n              \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n    
+              \"SetId\": \"W2D2PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n       
+ },\n        {\n          \"Day\": 3,\n          \"Workouts\": [\n            {\n              \"WorkoutId\": \"W2D3Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with 
+feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D3SquatS1\",\n
+ \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3SquatS2\",\n
+         \"SetNumber\": 2,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n
+   \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3SquatS3\",\n 
+                 \"SetNumber\": 3,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n       
+           \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n  
+            \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W2D3PushUp\",\n 
+             \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated 
+surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D3PushUpS1\",\n
+   \"SetNumber\": 1,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3PushUpS2\",\n      
+            \"SetNumber\": 2,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n
+      \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 10,\n                  \"Weight\": 0.0,\n   
+               \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W2D3Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat 
+back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D3RowS1\",\n
+    \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3RowS2\",\n        
+          \"SetNumber\": 2,\n                  \"Reps\": 12,\n                  \"Weight\": 5.0,\n
+    \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W2D3RowS3\",\n  
+                \"SetNumber\": 3,\n                  \"Reps\": 12,\n                  \"Weight\": 5.0,\n        
+          \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n   
+           \"Completed\": false\n            },\n             {\n              \"WorkoutId\": \"W2D3Plank\",\n  
+            \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W2D3PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Week\": 3,\n      \"Days\": [\n        {\n          \"Day\": 1,\n          \"Workouts\": [\n            {\n    
+          \"WorkoutId\": \"W3D1Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W3D1SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": 
+\"W3D1SquatS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D1SquatS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 15,\n
+  \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W3D1PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W3D1PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 
+0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D1PushUpS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n
+\"SetId\": \"W3D1PushUpS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 12,\n
+      \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n
+   \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W3D1Row\",\n              \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W3D1RowS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 15,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D1RowS2\",\n                  \"SetNumber\": 2,\n                  \"Reps\": 15,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D1RowS3\",\n                  \"SetNumber\": 3,\n                  \"Reps\": 15,\n
+ \"Weight\": 5.0,\n                  \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            },\n             {\n              \"WorkoutId\": \"W3D1Plank\",\n              \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n
+      \"SetId\": \"W3D1PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n        
+          \"Weight\": 0.0,\n                  \"Completed\": false\n                }\n              ],\n       
+       \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n        },\n   
+     {\n          \"Day\": 2,\n          \"Workouts\": [\n              {\n              \"WorkoutId\": \"W3D2Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n    
+          \"Sets\": [\n                {\n                  \"SetId\": \"W3D2SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2SquatS2\",\n
+   \"SetNumber\": 2,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2SquatS3\",\n       
+           \"SetNumber\": 3,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n
+     \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n        
+      \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W3D2PushUp\",\n       
+       \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower your chest towards the surface, keeping your body in a straight line.\",\n   
+           \"Sets\": [\n                {\n                  \"SetId\": \"W3D2PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2PushUpS2\",\n
+      \"SetNumber\": 2,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n
+\"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2PushUpS3\",\n   
+               \"SetNumber\": 3,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n
+         \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n    
+          \"Completed\": false\n            },\n            {\n              \"WorkoutId\": \"W3D2Row\",\n      
+        \"WorkoutName\": \"Dumbbell Row\",\n              \"Description\": \"Bend at the hips with a flat back, 
+holding a dumbbell in one hand. Pull the dumbbell towards your chest, keeping your elbow close to your body.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W3D2RowS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 15,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2RowS2\",\n
+    \"SetNumber\": 2,\n                  \"Reps\": 15,\n                  \"Weight\": 5.0,\n                  \"Completed\": false\n                },\n                {\n                  \"SetId\": \"W3D2RowS3\",\n        
+          \"SetNumber\": 3,\n                  \"Reps\": 15,\n                  \"Weight\": 5.0,\n
+    \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n
+     \"Completed\": false\n            },\n             {\n              \"WorkoutId\": \"W3D2Plank\",\n        
+      \"WorkoutName\": \"Plank\",\n              \"Description\": \"Hold a straight line from head to heels, engaging your core.\",\n              \"Sets\": [\n                {\n                  \"SetId\": \"W3D2PlankS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 1,\n                  \"Weight\": 0.0,\n     
+             \"Completed\": false\n                }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n            }\n          ]\n        },\n        {\n          \"Day\": 3,\n  
+        \"Workouts\": [\n            {\n              \"WorkoutId\": \"W3D3Squat\",\n              \"WorkoutName\": \"Bodyweight Squat\",\n              \"Description\": \"Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, keeping your back straight and chest up.\",\n              \"Sets\": [\n
+    {\n                  \"SetId\": \"W3D3SquatS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n    
+            {\n                  \"SetId\": \"W3D3SquatS2\",\n                  \"SetNumber\": 2,\n
+     \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+},\n                {\n                  \"SetId\": \"W3D3SquatS3\",\n                  \"SetNumber\": 3,\n     
+             \"Reps\": 15,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n        
+        }\n              ],\n              \"RestTimeSeconds\": 60,\n              \"Completed\": false\n       
+     },\n            {\n              \"WorkoutId\": \"W3D3PushUp\",\n              \"WorkoutName\": \"Incline Push-Up\",\n              \"Description\": \"Place hands on an elevated surface (e.g., chair, countertop). Lower 
+your chest towards the surface, keeping your body in a straight line.\",\n              \"Sets\": [\n
+     {\n                  \"SetId\": \"W3D3PushUpS1\",\n                  \"SetNumber\": 1,\n                  \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n                },\n  
+              {\n                  \"SetId\": \"W3D3PushUpS2\",\n                  \"SetNumber\": 2,\n
+        \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n
+   },\n                {\n                  \"SetId\": \"W3D3PushUpS3\",\n                  \"SetNumber\": 3,\n 
+                 \"Reps\": 12,\n                  \"Weight\": 0.0,\n                  \"Completed\": false\n    
+            }\n              ],\n              \"RestTimeSeconds\":"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "MAX_TOKENS",
+      "avgLogprobs": -0.0070521114647790692
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 190,
+    "candidatesTokenCount": 8002,
+    "totalTokenCount": 8192,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 190
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 8002
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash"
+}

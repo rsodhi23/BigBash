@@ -27,3 +27,6 @@ C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\refint\BigBash.dll
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.pdb
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.genruntimeconfig.cache
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\ref\BigBash.dll
+C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.csproj.AssemblyReference.cache
+C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.csproj.Up2Date

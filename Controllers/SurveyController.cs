@@ -1,5 +1,6 @@
-using System;
+using BigBash.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace BigBash.Controllers
 {
@@ -31,7 +32,7 @@ namespace BigBash.Controllers
                             {
                                 new
                                 {
-                                    text = $"Generate me a workout plan based on the following details: Experience Level - {request.ExperienceLevel}, Training Type - {request.TrainingType}, Training Days Per Week - {request.TrainingDaysPerWeek.Min}-{request.TrainingDaysPerWeek.Max}, Plan Duration - {request.PlanDurationWeeks} weeks. Additional Details: {request.AdditionalDetails}. Return it in a JSON format."
+                                    text = $"Generate me a workout plan based on the following details: Experience Level - {request.ExperienceLevel}, Training Type - {request.TrainingType}, Training Days Per Week - {request.TrainingDaysPerWeek.Min}-{request.TrainingDaysPerWeek.Max}, Plan Duration - {request.PlanDurationWeeks} weeks. Additional Details: {request.AdditionalDetails}. Return it format matching this structure: {{ \"WorkoutPlanId\": \"string\", \"PlanDurationWeeks\": \"int\", \"TrainingDaysPerWeek\": \"int\", \"Completed\": \"bool\", \"WorkoutPlan\": [{{ \"Week\": \"int\", \"Days\": [{{ \"Day\": \"int\", \"Workouts\": [{{ \"WorkoutId\": \"string\", \"WorkoutName\": \"string\", \"Description\": \"string\", \"Sets\": [{{ \"SetId\": \"string\", \"SetNumber\": \"int\", \"Reps\": \"int\", \"Weight\": \"double\", \"Completed\": \"bool\" }}], \"RestTimeSeconds\": \"int\", \"Completed\": \"bool\" }}] }}] }}] }}."
                                 }
                             }
                         }
@@ -46,9 +47,48 @@ namespace BigBash.Controllers
                 }
 
                 var result = await response.Content.ReadAsStringAsync();
-                //var responseModel = JsonConvert.DeserializeObject<ResponseModel>(result);
-                //return Ok(responseModel);
-                 return Ok();
+                var geminiResult = JsonConvert.DeserializeObject<GeminiResponseModel>(result);
+                var res = geminiResult.Candidates.FirstOrDefault()?.Content.Parts.FirstOrDefault()?.Text;
+                Console.WriteLine(res); // Log the response for debugging
+                
+                var responseModel = new
+                {
+                    WorkoutPlanId = Guid.NewGuid().ToString(),
+                    PlanDurationWeeks = request.PlanDurationWeeks,
+                    TrainingDaysPerWeek = new Random().Next(request.TrainingDaysPerWeek.Min, request.TrainingDaysPerWeek.Max + 1),
+                    Completed = false,
+                    WorkoutPlan = Enumerable.Range(1, request.PlanDurationWeeks).Select(week => new
+                    {
+                        Week = week,
+                        Days = Enumerable.Range(1, 7).Select(day => new
+                        {
+                            Day = day,
+                            Workouts = new[]
+                            {
+                                new
+                                {
+                                    WorkoutId = Guid.NewGuid().ToString(),
+                                    WorkoutName = $"Workout {day}",
+                                    Description = "Sample workout description",
+                                    Sets = new[]
+                                    {
+                                        new
+                                        {
+                                            SetId = Guid.NewGuid().ToString(),
+                                            SetNumber = 1,
+                                            Reps = 10,
+                                            Weight = 50.0,
+                                            Completed = false
+                                        }
+                                    },
+                                    RestTimeSeconds = 60,
+                                    Completed = false
+                                }
+                            }
+                        })
+                    })
+                };
+                return Ok(responseModel);
             }
         }
     }
@@ -68,8 +108,4 @@ namespace BigBash.Controllers
         public int Max { get; set; }
     }
 
-    public class ResponseModel
-    {
-        public string WorkoutPlan { get; set; }
-    }
 }
