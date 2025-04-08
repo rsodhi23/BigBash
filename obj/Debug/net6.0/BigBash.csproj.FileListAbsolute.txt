@@ -1,6 +1,5 @@
 C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\appsettings.json
-C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\BigBash.staticwebassets.runtime.json
 C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\BigBash.staticwebassets.endpoints.json
 C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\BigBash.exe
 C:\Users\rajat\Desktop\BigBash\bin\Debug\net6.0\BigBash.deps.json
@@ -12,6 +11,7 @@ C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.AssemblyInfoInputs.cache
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.AssemblyInfo.cs
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.csproj.CoreCompileInputs.cache
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\BigBash.sourcelink.json
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\scopedcss\bundle\BigBash.styles.css
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\rajat\Desktop\BigBash\obj\Debug\net6.0\staticwebassets.development.json

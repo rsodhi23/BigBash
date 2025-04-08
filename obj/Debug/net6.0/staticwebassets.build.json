@@ -1,20 +1,12 @@
 {
   "Version": 1,
-  "Hash": "+7rJjMTIjIy5/OdUDlNt95ti0DRdOLhKWHjqoxXXx/g=",
+  "Hash": "ZVU8d3LbfOv/lfwlIUqtfGmoQiky28vTbH8WPsFtiRk=",
   "Source": "BigBash",
   "BasePath": "_content/BigBash",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "BigBash\\wwwroot",
-      "Source": "BigBash",
-      "ContentRoot": "c:\\Users\\rajat\\Desktop\\BigBash\\wwwroot\\",
-      "BasePath": "_content/BigBash",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []
 }

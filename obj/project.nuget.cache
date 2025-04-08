@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JUquHb16+9E=",
+  "dgSpecHash": "xQW3BfT67LE=",
   "success": true,
-  "projectFilePath": "c:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
+  "projectFilePath": "C:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rajat\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\rajat\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",

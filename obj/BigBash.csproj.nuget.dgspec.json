@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj": {}
+    "C:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj": {}
   },
   "projects": {
-    "c:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj": {
+    "C:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
+        "projectUniqueName": "C:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
         "projectName": "BigBash",
-        "projectPath": "c:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
+        "projectPath": "C:\\Users\\rajat\\Desktop\\BigBash\\BigBash.csproj",
         "packagesPath": "C:\\Users\\rajat\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\rajat\\Desktop\\BigBash\\obj\\",
+        "outputPath": "C:\\Users\\rajat\\Desktop\\BigBash\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
