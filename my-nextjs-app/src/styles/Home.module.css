@@ -1,0 +1,238 @@
+.container {
+  min-height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111720; /* Background color around all sections */
+  color: #E0E0E0; /* Light text for contrast */
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #7AAEA1; /* Accent color for titles */
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #7AAEA1; /* Accent color for subtitles */
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 1rem 0;
+  color: #B0B0B0; /* Muted light text */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .form {
+    gap: 0.5rem;
+  }
+
+  .form label {
+    font-size: 0.9rem;
+  }
+
+  .form input,
+  .form select,
+  .form textarea {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}
+
+.image {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a shadow for a bold look */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form input,
+.form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF; /* White text */
+  background-color: #7AAEA1; /* Button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #5F8F87; /* Slightly darker shade for hover effect */
+}
+
+.link {
+  margin-top: 1rem;
+  color: #7AAEA1; /* Accent color for links */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.graphicalCTA button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #444;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.graphicalCTA button:hover {
+  background-color: #666;
+  border-color: #999;
+}
+
+.graphicalCTA button.selected {
+  background-color: #7AAEA1; /* Teal color for selected button */
+  border-color: #5F8F87; /* Slightly darker teal border */
+  color: #fff;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slider {
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.thumb {
+  height: 24px;
+  width: 24px;
+  background-color: #7AAEA1; /* RC-Slider thumb color */
+  border: 3px solid #5F8F87; /* Slightly darker border */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.track {
+  height: 10px;
+  background: #1C232C; /* Section color for slider track */
+  border-radius: 5px;
+}
+
+.track-1 {
+  background: #7AAEA1; /* RC-Slider selected range color */
+}
+
+.rangeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rangeContainer p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #d8d8d8; /* Light gray for readability */
+}
+
+.section {
+  background: #1C232C; /* Outer section color */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section-inner {
+  background: #34454F; /* Slightly lighter color for grouped controls */
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.section label + label {
+  margin-top: 1rem; /* Add spacing between multiple questions in a section */
+}
