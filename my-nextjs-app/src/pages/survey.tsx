@@ -29,9 +29,10 @@ export default function Survey() {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/workout-plans', formData);
-      const randomGuid = crypto.randomUUID();
-      document.cookie = `workoutPlanId=${randomGuid}; path=/;`;
+      // Update the cookie setting logic to use the response from the axios call
+      const response = await axios.post('http://localhost:5000/api/workout-plans', formData);
+      const workoutPlanId = response.data;
+      document.cookie = `workoutPlanId=${workoutPlanId}; path=/;`;
       alert('Plan created successfully!');
     } catch (error) {
       if (error.response) {
